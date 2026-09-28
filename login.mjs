@@ -1,0 +1,3 @@
+import crypto from "node:crypto";
+const sign=(s)=>crypto.createHmac("sha256",process.env.ADMIN_TOKEN_SECRET||"change-me").update(s).digest("hex");
+export default async(req)=>{if(req.method!=="POST")return new Response("",{status:405});const {password}=await req.json();if(password!==(process.env.ADMIN_PASSWORD||"Nesslergraben8"))return Response.json({ok:false},{status:401});const exp=Date.now()+8*60*60*1000;const raw=String(exp);return Response.json({ok:true,token:raw+"."+sign(raw)});};

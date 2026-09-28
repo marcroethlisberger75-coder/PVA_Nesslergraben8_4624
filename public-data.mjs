@@ -1,0 +1,2 @@
+import { getStore } from "@netlify/blobs";
+export default async()=>{try{const s=getStore("pv-data");const x=await s.get("aggregate",{type:"json"});return Response.json(x||{days:[],settings:null});}catch(e){return Response.json({days:[],settings:null});}};
