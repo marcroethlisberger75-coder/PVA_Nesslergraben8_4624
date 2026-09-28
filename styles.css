@@ -36,3 +36,9 @@
 .toolbar label:first-child{font-size:14px;font-weight:800;color:#526b88}
 .toolbar label:first-child select{min-width:150px;height:48px;margin-top:6px;padding:8px 38px 8px 14px;font-size:18px;font-weight:800;border:1px solid #b9c9dc;border-radius:11px;background:#fff;color:#17365c}
 @media(max-width:700px){.toolbar label:first-child select{min-width:140px;height:46px;font-size:17px}}
+
+/* Vergleiche: Monatsauswahl gleiche Höhe wie die beiden Vergleichsbuttons */
+.toolbar{align-items:flex-end}
+.toolbar label:first-child select{height:44px;min-width:155px;margin-top:6px;padding:7px 38px 7px 14px;font-size:16px}
+.toolbar>button{height:44px}
+@media(max-width:700px){.toolbar label:first-child select,.toolbar>button{height:44px}}
