@@ -12,9 +12,10 @@ for (const [from, to] of [
   ['App.jsx', 'src/App.jsx'],
   ['main.jsx', 'src/main.jsx'],
   ['styles.css', 'src/styles.css'],
-  ['seed.json', 'src/seed.json'],
   ['anlage.jpeg', 'public/anlage.jpeg'],
   ['login.mjs', 'netlify/functions/login.mjs'],
+  ['owner-login.mjs', 'netlify/functions/owner-login.mjs'],
+  ['seed.json', 'netlify/functions/seed.json'],
   ['public-data.mjs', 'netlify/functions/public-data.mjs'],
   ['save-data.mjs', 'netlify/functions/save-data.mjs']
 ]) await copyFile(from, to);

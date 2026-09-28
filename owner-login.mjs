@@ -1,0 +1,4 @@
+import crypto from "node:crypto";
+const secret=()=>process.env.OWNER_TOKEN_SECRET||process.env.ADMIN_TOKEN_SECRET||"";
+const sign=s=>crypto.createHmac("sha256",secret()).update(s).digest("hex");
+export default async(req)=>{if(req.method!=="POST")return new Response("",{status:405});if(!process.env.OWNER_PASSWORD||!secret())return Response.json({error:"Not configured"},{status:503});const {password}=await req.json();if(password!==process.env.OWNER_PASSWORD)return Response.json({ok:false},{status:401});const exp=Date.now()+30*24*60*60*1000;const raw=String(exp);return Response.json({ok:true,token:raw+"."+sign(raw)});};
