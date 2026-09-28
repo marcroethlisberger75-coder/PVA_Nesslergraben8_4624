@@ -49,3 +49,9 @@
 .dashboard-period label{flex:0 0 auto;width:155px;font-size:14px;font-weight:800;color:#526b88}
 .dashboard-period select{width:155px;min-width:155px;height:44px;margin-top:6px;padding:7px 38px 7px 14px;font-size:16px;font-weight:800;border:1px solid #b9c9dc;border-radius:11px;background:#fff;color:#17365c}
 @media(max-width:700px){.dashboard-period{gap:10px}.dashboard-period label{width:calc(50% - 5px)}.dashboard-period select{width:100%;min-width:0;height:44px;font-size:16px}}
+
+/* Dashboard Zeitraum exakt wie Vergleichs-Zeile */
+.dashboard-period{display:flex;justify-content:flex-start;align-items:flex-end;gap:12px;padding:16px 22px;margin:0;background:transparent;border:0;box-shadow:none}
+.dashboard-period label{display:flex;flex-direction:column;flex:0 0 155px;width:155px;min-width:155px;margin:0;font-size:14px;font-weight:800;color:#526b88}
+.dashboard-period select{box-sizing:border-box;width:155px;min-width:155px;height:44px;margin:6px 0 0;padding:7px 38px 7px 14px;font-size:16px;font-weight:800;border:1px solid #b9c9dc;border-radius:11px;background:#fff;color:#17365c}
+@media(max-width:700px){.dashboard-period{padding:16px 22px;gap:10px}.dashboard-period label{flex:0 1 155px;width:155px;min-width:0}.dashboard-period select{width:100%;min-width:0;height:44px}}
