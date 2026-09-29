@@ -97,3 +97,19 @@
 .ownerError{margin-top:12px;padding:10px 12px;border-radius:10px;background:#fff0f1;color:#bd3145;font-weight:700;font-size:14px}
 @media(max-width:800px){.ownerGate{grid-template-columns:1fr;grid-template-rows:34vh minmax(0,1fr)}.ownerPhoto{min-height:0}.ownerPhotoShade{padding:24px}.ownerPhotoTitle b{font-size:24px}.ownerPhotoTitle span{font-size:14px}.ownerLogin{padding:34px 24px;justify-content:flex-start}.ownerLogin h1{font-size:31px}.ownerLoginContent{max-width:560px;margin:0 auto}}
 @media(max-width:520px){.ownerGate{grid-template-rows:28vh minmax(0,1fr)}.ownerPhotoShade{padding:18px}.ownerPhotoTitle svg{width:36px;height:36px}.ownerPhotoTitle b{font-size:21px}.ownerLogin{padding:27px 18px}.ownerLogin form{grid-template-columns:1fr}.ownerLogin button{width:100%}}
+
+
+/* Speichersimulation – Auswahlfelder und Kennzahlen */
+.battery-toolbar{gap:12px}
+.battery-toolbar label{display:flex;flex-direction:column;flex:0 0 155px;width:155px;min-width:155px;margin:0;font-size:14px;font-weight:800;color:#526b88}
+.battery-toolbar label select{box-sizing:border-box;width:155px!important;min-width:155px!important;height:44px!important;margin:6px 0 0!important;padding:7px 38px 7px 14px!important;font-size:16px!important;font-weight:800;border:1px solid #b9c9dc;border-radius:11px;background:#fff;color:#17365c}
+.battery-period{margin:0 22px 2px;color:#6b7f98;font-size:13px}.battery-period b{color:#29496d}
+.battery-cards{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:0}
+.battery-cards .card{min-width:0;padding:18px 18px}
+.battery-cards .card>div:last-child{min-width:0;flex:1}
+.battery-cards .card strong{white-space:normal;line-height:1.08}
+.battery-cards .card small{white-space:normal}
+.battery-cards .card em{white-space:normal;line-height:1.25}
+@media(max-width:1050px){.battery-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.battery-toolbar label{flex:0 1 155px;width:155px;min-width:0}.battery-toolbar label select{width:100%!important;min-width:0!important}.battery-period{margin:0 10px 2px}}
+@media(max-width:620px){.battery-cards{grid-template-columns:1fr}}
