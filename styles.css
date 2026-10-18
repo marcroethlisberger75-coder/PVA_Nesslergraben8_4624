@@ -134,3 +134,13 @@
 .legend-dot.unavailable{background:#fde7e7;border-color:#f3caca}
 @media(max-width:1000px){.battery-calendar{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.battery-calendar{grid-template-columns:1fr}.calendar-summary strong{width:100%;margin-left:0}}
+
+
+/* Boileranalyse */
+.boiler-cards{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:20px}
+.boiler-finance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:8px 0 18px}
+.boiler-finance-year{border:1px solid #d8e3ef;border-radius:14px;padding:16px;background:#fbfdff}
+.boiler-finance-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid #e5edf6}
+.boiler-finance-head b{font-size:18px;color:#17365c}.boiler-finance-head span{font-size:13px;color:#607792;text-align:right}
+.boiler-finance-values{display:grid;gap:9px}.boiler-finance-values span{display:flex;justify-content:space-between;gap:14px;color:#526b88;font-size:14px}.boiler-finance-values b{color:#17365c;white-space:nowrap}
+@media(max-width:1000px){.boiler-finance-grid{grid-template-columns:1fr}.boiler-cards{grid-template-columns:1fr}}
